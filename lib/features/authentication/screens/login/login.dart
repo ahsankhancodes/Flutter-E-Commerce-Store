@@ -4,7 +4,6 @@ import 'package:fyp_store/common/widgets/login_signup/form_divider.dart';
 import 'package:fyp_store/common/widgets/login_signup/social_buttons.dart';
 import 'package:fyp_store/utils/constants/sizes.dart';
 import 'package:fyp_store/utils/constants/text_strings.dart';
-import 'package:fyp_store/utils/helpers/helper_functions.dart';
 import 'package:get/get.dart';
 import 'widgets/login_form.dart';
 import 'widgets/login_header.dart';

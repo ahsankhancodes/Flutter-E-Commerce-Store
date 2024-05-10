@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp_store/utils/constants/colors.dart';
-import 'package:fyp_store/utils/constants/text_strings.dart';
 import 'package:fyp_store/utils/helpers/helper_functions.dart';
-import 'package:get/get.dart';
 
 class MyLoginDivider extends StatelessWidget {
   const MyLoginDivider({
