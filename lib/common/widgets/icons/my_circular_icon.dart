@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:fyp_store/utils/constants/colors.dart';
 import 'package:fyp_store/utils/constants/sizes.dart';
 import 'package:fyp_store/utils/helpers/helper_functions.dart';
-import 'package:iconsax_flutter/iconsax_flutter.dart';
 
 class MyCircularIcon extends StatelessWidget {
   const MyCircularIcon({

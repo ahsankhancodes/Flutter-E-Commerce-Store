@@ -1,11 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:fyp_store/common/styles/shadows.dart';
 import 'package:fyp_store/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:fyp_store/common/widgets/icons/my_circular_icon.dart';
 import 'package:fyp_store/common/widgets/images/my_rounded_image.dart';
-import 'package:fyp_store/common/widgets/texts/my_brand_title_text.dart';
 import 'package:fyp_store/common/widgets/texts/my_brand_title_text_with_verified_icon.dart';
 import 'package:fyp_store/common/widgets/texts/product_price_text.dart';
 import 'package:fyp_store/common/widgets/texts/product_title_text.dart';

@@ -1,10 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:fyp_store/common/widgets/appbar/appbar.dart';
 import 'package:fyp_store/common/widgets/appbar/tabbar.dart';
-import 'package:fyp_store/common/widgets/brands/brand_show_case.dart';
-import 'package:fyp_store/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:fyp_store/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:fyp_store/common/widgets/layouts/grid_layout.dart';
 import 'package:fyp_store/common/widgets/products/cart/cart_menu_icon.dart';
@@ -12,7 +8,6 @@ import 'package:fyp_store/common/widgets/brands/my_brand_card.dart';
 import 'package:fyp_store/common/widgets/texts/section_heading.dart';
 import 'package:fyp_store/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:fyp_store/utils/constants/colors.dart';
-import 'package:fyp_store/utils/constants/image_strings.dart';
 import 'package:fyp_store/utils/constants/sizes.dart';
 import 'package:fyp_store/utils/helpers/helper_functions.dart';
 

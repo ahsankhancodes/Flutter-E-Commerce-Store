@@ -5,7 +5,12 @@ import 'package:fyp_store/utils/helpers/helper_functions.dart';
 
 class MyVerticalImageText extends StatelessWidget {
   const MyVerticalImageText({
-    super.key, required this.image, required this.title, this.textColor = MyColors.white, this.backgroundColor = MyColors.white, this.onTap,
+    super.key,
+    required this.image,
+    required this.title,
+    this.textColor = MyColors.white,
+    this.backgroundColor,
+    this.onTap,
   });
 
   final String image, title;
@@ -29,7 +34,8 @@ class MyVerticalImageText extends StatelessWidget {
               height: 56,
               padding: const EdgeInsets.all(MySizes.sm),
               decoration: BoxDecoration(
-                color: backgroundColor ?? (dark ? MyColors.black : MyColors.white),
+                color:
+                    backgroundColor ?? (dark ? MyColors.black : MyColors.white),
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Center(
@@ -42,9 +48,7 @@ class MyVerticalImageText extends StatelessWidget {
             ),
 
             /// Text
-            const SizedBox(
-                height: MySizes.spaceBtwItems / 3
-            ),
+            const SizedBox(height: MySizes.spaceBtwItems / 3),
             SizedBox(
                 width: 55,
                 child: Text(

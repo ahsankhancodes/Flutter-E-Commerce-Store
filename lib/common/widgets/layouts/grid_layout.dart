@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fyp_store/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:fyp_store/utils/constants/sizes.dart';
 
 class MyGridLayout extends StatelessWidget {

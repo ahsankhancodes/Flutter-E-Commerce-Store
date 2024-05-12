@@ -25,7 +25,7 @@ class VerifyEmailScreen extends StatelessWidget {
       body: SingleChildScrollView(
         // Padding to give Default Space on all sides in all screens.
         child: Padding(
-          padding: EdgeInsets.all(MySizes.defaultSpace),
+          padding: const EdgeInsets.all(MySizes.defaultSpace),
           child: Column(
             children: [
               /// Image

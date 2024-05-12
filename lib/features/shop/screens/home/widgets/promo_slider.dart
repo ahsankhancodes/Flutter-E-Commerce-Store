@@ -4,7 +4,6 @@ import 'package:fyp_store/common/widgets/custom_shapes/containers/circular_conta
 import 'package:fyp_store/common/widgets/images/my_rounded_image.dart';
 import 'package:fyp_store/features/shop/controllers/home_controller.dart';
 import 'package:fyp_store/utils/constants/colors.dart';
-import 'package:fyp_store/utils/constants/image_strings.dart';
 import 'package:fyp_store/utils/constants/sizes.dart';
 import 'package:get/get.dart';
 
