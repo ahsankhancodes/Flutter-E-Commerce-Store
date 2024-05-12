@@ -4,11 +4,13 @@ import 'package:iconsax_flutter/iconsax_flutter.dart';
 
 class MyCartCounterIcon extends StatelessWidget {
   const MyCartCounterIcon({
-    super.key, required this.onPressed, required this.iconColor,
+    super.key, required this.onPressed, this.iconColor,
   });
 
-  final Color iconColor;
+  final Color? iconColor;
   final VoidCallback onPressed;
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +18,7 @@ class MyCartCounterIcon extends StatelessWidget {
       children: [
         IconButton(
           onPressed: onPressed,
-          icon: Icon(Iconsax.shopping_bag),
+          icon: const Icon(Iconsax.shopping_bag),
           color: iconColor,
         ),
         Positioned(

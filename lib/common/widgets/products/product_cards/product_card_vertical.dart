@@ -5,6 +5,8 @@ import 'package:fyp_store/common/styles/shadows.dart';
 import 'package:fyp_store/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:fyp_store/common/widgets/icons/my_circular_icon.dart';
 import 'package:fyp_store/common/widgets/images/my_rounded_image.dart';
+import 'package:fyp_store/common/widgets/texts/my_brand_title_text.dart';
+import 'package:fyp_store/common/widgets/texts/my_brand_title_text_with_verified_icon.dart';
 import 'package:fyp_store/common/widgets/texts/product_price_text.dart';
 import 'package:fyp_store/common/widgets/texts/product_title_text.dart';
 import 'package:fyp_store/utils/constants/colors.dart';
@@ -79,30 +81,19 @@ class MyProductCardVertical extends StatelessWidget {
             ),
 
             /// -- Details
-            Padding(
-              padding: const EdgeInsets.only(left: MySizes.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: MySizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const MyProductTitleText(
+                  MyProductTitleText(
                     title: 'Green Nike Air Shoes',
                     smallSize: true,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: MySizes.spaceBtwItems / 2,
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        'Nike',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(width: MySizes.xs,),
-                      const Icon(Iconsax.verify, color: MyColors.primary, size: MySizes.iconXs,)
-                    ],
-                  ),
+                  MyBrandTitleWithVerifiedIcon(title: 'Nike'),
                 ],
               ),
             ),
@@ -138,5 +129,6 @@ class MyProductCardVertical extends StatelessWidget {
     );
   }
 }
+
 
 

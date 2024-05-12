@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp_store/features/shop/screens/home/widgets/home.dart';
+import 'package:fyp_store/features/shop/screens/store/store.dart';
 import 'package:fyp_store/utils/helpers/helper_functions.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -43,7 +44,7 @@ class NavigationController extends GetxController{
 
   final screens = [
     const HomeScreen(),
-    Container(color: Colors.purple,),
+    const StoreScreen(),
     Container(color: Colors.orange,),
     Container(color: Colors.blue,),
   ];
