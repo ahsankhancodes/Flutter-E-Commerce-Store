@@ -4,8 +4,10 @@ import 'package:fyp_store/common/widgets/custom_shapes/containers/primary_header
 import 'package:fyp_store/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:fyp_store/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:fyp_store/common/widgets/texts/section_heading.dart';
+import 'package:fyp_store/features/personalization/screens/profile/profile.dart';
 import 'package:fyp_store/utils/constants/colors.dart';
 import 'package:fyp_store/utils/constants/sizes.dart';
+import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -36,7 +38,8 @@ class SettingsScreen extends StatelessWidget {
                 ),
 
                 /// User Profile Card
-                const MyUserProfileTile(),
+                MyUserProfileTile(
+                    onPressed: () => Get.to(() => const ProfileScreen())),
                 const SizedBox(
                   height: MySizes.spaceBtwSections,
                 )
@@ -134,7 +137,9 @@ class SettingsScreen extends StatelessWidget {
                     child: OutlinedButton(
                         onPressed: () {}, child: const Text('Logout')),
                   ),
-                  const SizedBox(height: MySizes.spaceBtwSections * 2.5,)
+                  const SizedBox(
+                    height: MySizes.spaceBtwSections * 2.5,
+                  )
                 ],
               ),
             ),

@@ -7,8 +7,10 @@ import 'package:iconsax_flutter/iconsax_flutter.dart';
 class MyUserProfileTile extends StatelessWidget {
   const MyUserProfileTile({
     super.key,
+    required this.onPressed,
   });
 
+  final VoidCallback onPressed;
   @override
   Widget build(BuildContext context) {
     return ListTile(
@@ -20,7 +22,7 @@ class MyUserProfileTile extends StatelessWidget {
       ),
       title: Text('Ahsan Khan', style: Theme.of(context).textTheme.headlineSmall!.apply(color: MyColors.white)),
       subtitle: Text('ahsankhancodes@gmail.com', style: Theme.of(context).textTheme.bodyMedium!.apply(color: MyColors.white)),
-      trailing: IconButton(onPressed: (){}, icon: const Icon(Iconsax.edit, color: MyColors.white,),),
+      trailing: IconButton(onPressed: onPressed, icon: const Icon(Iconsax.edit, color: MyColors.white,),),
     );
   }
 }
