@@ -103,30 +103,33 @@ class MyProductCardVertical extends StatelessWidget {
                       const Icon(Iconsax.verify, color: MyColors.primary, size: MySizes.iconXs,)
                     ],
                   ),
-
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      /// Price
-                      const MyProductPriceText(price: '35.0', isLarge: true,),
-                      Container(
-                        decoration: const BoxDecoration(
-                          color: MyColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(MySizes.carRadiusMd),
-                            bottomRight: Radius.circular(MySizes.productImageRadius)
-                          ),
-                        ),
-                        child: const SizedBox(
-                            width: MySizes.iconLg * 1.2,
-                            height: MySizes.iconLg * 1.2,
-                            child: Center(child: Icon(Icons.add, color: MyColors.white,))),
-                      ),
-                    ],
-                  )
                 ],
               ),
-            )
+            ),
+            const Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                /// Price
+                const Padding(
+                  padding: EdgeInsets.only(left: MySizes.sm),
+                  child: MyProductPriceText(price: '35.0', isLarge: true,),
+                ),
+                Container(
+                  decoration: const BoxDecoration(
+                    color: MyColors.dark,
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(MySizes.carRadiusMd),
+                        bottomRight: Radius.circular(MySizes.productImageRadius)
+                    ),
+                  ),
+                  child: const SizedBox(
+                      width: MySizes.iconLg * 1.2,
+                      height: MySizes.iconLg * 1.2,
+                      child: Center(child: Icon(Icons.add, color: MyColors.white,))),
+                ),
+              ],
+            ),
 
             /// Details
           ],

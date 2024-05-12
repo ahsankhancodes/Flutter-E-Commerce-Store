@@ -87,6 +87,12 @@ class HomeScreen extends StatelessWidget {
                     height: MySizes.spaceBtwSections,
                   ),
 
+                  /// -- Heading
+                  MySectionHeading(title: 'Popular Products', onPressed: (){}),
+                  const SizedBox(
+                    height: MySizes.spaceBtwItems,
+                  ),
+
                   /// -- Popular Products
                   MyGridLayout(itemCount: 2, itemBuilder: (_, index) => const MyProductCardVertical() ),
                 ],
