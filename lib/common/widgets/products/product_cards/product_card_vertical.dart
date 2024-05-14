@@ -6,10 +6,12 @@ import 'package:fyp_store/common/widgets/images/my_rounded_image.dart';
 import 'package:fyp_store/common/widgets/texts/my_brand_title_text_with_verified_icon.dart';
 import 'package:fyp_store/common/widgets/texts/product_price_text.dart';
 import 'package:fyp_store/common/widgets/texts/product_title_text.dart';
+import 'package:fyp_store/features/shop/screens/product_details/product_details.dart';
 import 'package:fyp_store/utils/constants/colors.dart';
 import 'package:fyp_store/utils/constants/image_strings.dart';
 import 'package:fyp_store/utils/constants/sizes.dart';
 import 'package:fyp_store/utils/helpers/helper_functions.dart';
+import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 
 class MyProductCardVertical extends StatelessWidget {
@@ -20,7 +22,7 @@ class MyProductCardVertical extends StatelessWidget {
     final dark = MyHelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetails()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
