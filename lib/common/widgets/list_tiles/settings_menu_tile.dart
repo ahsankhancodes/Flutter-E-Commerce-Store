@@ -8,15 +8,18 @@ class MySettingMenuTile extends StatelessWidget {
     required this.title,
     required this.subTitle,
     this.trailing,
+    this.onTap,
   });
 
   final IconData icon;
   final String title, subTitle;
   final Widget? trailing;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      onTap: onTap,
       leading: Icon(icon, size: 28, color: MyColors.primary),
       title: Text(
         title,

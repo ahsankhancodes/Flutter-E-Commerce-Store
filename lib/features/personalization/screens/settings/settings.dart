@@ -4,6 +4,7 @@ import 'package:fyp_store/common/widgets/custom_shapes/containers/primary_header
 import 'package:fyp_store/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:fyp_store/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:fyp_store/common/widgets/texts/section_heading.dart';
+import 'package:fyp_store/features/personalization/screens/address/address.dart';
 import 'package:fyp_store/features/personalization/screens/profile/profile.dart';
 import 'package:fyp_store/utils/constants/colors.dart';
 import 'package:fyp_store/utils/constants/sizes.dart';
@@ -25,17 +26,13 @@ class SettingsScreen extends StatelessWidget {
               children: [
                 /// AppBar
                 MyAppBar(
-                  title: Text(
-                    'Account',
-                    style: Theme.of(context)
-                        .textTheme
-                        .headlineMedium!
-                        .apply(color: MyColors.white),
-                  ),
+                  title: Text('Account',
+                      style: Theme.of(context)
+                          .textTheme
+                          .headlineMedium!
+                          .apply(color: MyColors.white)),
                 ),
-                const SizedBox(
-                  height: MySizes.spaceBtwSections,
-                ),
+                const SizedBox(height: MySizes.spaceBtwSections),
 
                 /// User Profile Card
                 MyUserProfileTile(
@@ -60,10 +57,11 @@ class SettingsScreen extends StatelessWidget {
                     height: MySizes.spaceBtwItems,
                   ),
 
-                  const MySettingMenuTile(
+                  MySettingMenuTile(
                     icon: Iconsax.safe_home,
                     title: 'My Addresses',
                     subTitle: 'Set shopping delivery address',
+                    onTap: () => Get.to(() => const UserAddressScreen())
                   ),
                   const MySettingMenuTile(
                     icon: Iconsax.shopping_cart,
