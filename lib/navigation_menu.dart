@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp_store/features/personalization/screens/settings/settings.dart';
-import 'package:fyp_store/features/shop/screens/home/widgets/home.dart';
+import 'package:fyp_store/features/shop/screens/home/home.dart';
 import 'package:fyp_store/features/shop/screens/store/store.dart';
 import 'package:fyp_store/features/shop/screens/wishlist/wishlist.dart';
 import 'package:fyp_store/utils/helpers/helper_functions.dart';

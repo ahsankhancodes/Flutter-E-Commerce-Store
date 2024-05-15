@@ -10,7 +10,7 @@ import 'package:fyp_store/utils/constants/colors.dart';
 import 'package:fyp_store/utils/constants/image_strings.dart';
 import 'package:fyp_store/utils/constants/sizes.dart';
 
-import 'promo_slider.dart';
+import 'widgets/promo_slider.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

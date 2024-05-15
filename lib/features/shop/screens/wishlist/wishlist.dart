@@ -3,7 +3,7 @@ import 'package:fyp_store/common/widgets/appbar/appbar.dart';
 import 'package:fyp_store/common/widgets/icons/my_circular_icon.dart';
 import 'package:fyp_store/common/widgets/layouts/grid_layout.dart';
 import 'package:fyp_store/common/widgets/products/product_cards/product_card_vertical.dart';
-import 'package:fyp_store/features/shop/screens/home/widgets/home.dart';
+import 'package:fyp_store/features/shop/screens/home/home.dart';
 import 'package:fyp_store/utils/constants/sizes.dart';
 import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
