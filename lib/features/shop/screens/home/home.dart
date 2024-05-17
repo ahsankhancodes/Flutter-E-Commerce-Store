@@ -4,11 +4,13 @@ import 'package:fyp_store/common/widgets/custom_shapes/containers/search_contain
 import 'package:fyp_store/common/widgets/layouts/grid_layout.dart';
 import 'package:fyp_store/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:fyp_store/common/widgets/texts/section_heading.dart';
+import 'package:fyp_store/features/shop/screens/all_products/all_products.dart';
 import 'package:fyp_store/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:fyp_store/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:fyp_store/utils/constants/colors.dart';
 import 'package:fyp_store/utils/constants/image_strings.dart';
 import 'package:fyp_store/utils/constants/sizes.dart';
+import 'package:get/get.dart';
 
 import 'widgets/promo_slider.dart';
 
@@ -59,7 +61,9 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: MySizes.spaceBtwSections,)
+                  SizedBox(
+                    height: MySizes.spaceBtwSections,
+                  )
                 ],
               ),
             ),
@@ -82,13 +86,17 @@ class HomeScreen extends StatelessWidget {
                   ),
 
                   /// -- Heading
-                  MySectionHeading(title: 'Popular Products', onPressed: (){}),
+                  MySectionHeading(
+                      title: 'Popular Products',
+                      onPressed: () => Get.to(() => const AllProducts())),
                   const SizedBox(
                     height: MySizes.spaceBtwItems,
                   ),
 
                   /// -- Popular Products
-                  MyGridLayout(itemCount: 2, itemBuilder: (_, index) => const MyProductCardVertical() ),
+                  MyGridLayout(
+                      itemCount: 2,
+                      itemBuilder: (_, index) => const MyProductCardVertical()),
                 ],
               ),
             )
@@ -98,4 +106,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
