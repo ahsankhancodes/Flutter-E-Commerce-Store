@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fyp_store/common/widgets/image_text_widgets/vertical_image_text.dart';
+import 'package:fyp_store/features/shop/screens/sub_category/sub_categories.dart';
 import 'package:fyp_store/utils/constants/image_strings.dart';
+import 'package:get/get.dart';
 
 class MyHomeCategories extends StatelessWidget {
   const MyHomeCategories({
@@ -19,7 +21,7 @@ class MyHomeCategories extends StatelessWidget {
           return MyVerticalImageText(
             image: MyImages.shoeIcon,
             title: 'Shoes',
-            onTap: () {},
+            onTap: () => Get.to(() => const SubCategoriesScreen()),
           );
         },
       ),
