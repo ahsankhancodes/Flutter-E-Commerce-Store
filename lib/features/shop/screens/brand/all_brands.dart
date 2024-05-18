@@ -4,6 +4,7 @@ import 'package:fyp_store/common/widgets/brands/my_brand_card.dart';
 import 'package:fyp_store/common/widgets/layouts/grid_layout.dart';
 import 'package:fyp_store/common/widgets/texts/section_heading.dart';
 import 'package:fyp_store/features/shop/screens/brand/brand_products.dart';
+import 'package:fyp_store/features/shop/screens/home/home.dart';
 import 'package:fyp_store/utils/constants/sizes.dart';
 import 'package:get/get.dart';
 
