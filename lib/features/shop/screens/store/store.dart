@@ -6,10 +6,12 @@ import 'package:fyp_store/common/widgets/layouts/grid_layout.dart';
 import 'package:fyp_store/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:fyp_store/common/widgets/brands/my_brand_card.dart';
 import 'package:fyp_store/common/widgets/texts/section_heading.dart';
+import 'package:fyp_store/features/shop/screens/brand/all_brands.dart';
 import 'package:fyp_store/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:fyp_store/utils/constants/colors.dart';
 import 'package:fyp_store/utils/constants/sizes.dart';
 import 'package:fyp_store/utils/helpers/helper_functions.dart';
+import 'package:get/get.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -59,7 +61,7 @@ class StoreScreen extends StatelessWidget {
 
                       /// -- Featured Brands
                       MySectionHeading(
-                          title: 'Featured Brands', onPressed: () {}),
+                          title: 'Featured Brands', onPressed: () => Get.to(()=> const AllBrandsScreen())),
                       const SizedBox(
                         height: MySizes.spaceBtwItems / 1.5,
                       ),
